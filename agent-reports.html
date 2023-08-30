@@ -749,42 +749,11 @@
                             <div class="card">
                                 
                                 <div class="card-header py-3">
-                                    <div class="d-flex tbl-filter-container justify-content-between align-items-center py-0 m-0">
-                                        <div class="d-flex the-filters">
-                                            <div class="d-none">
-                                                <div class="dropdown d-inline-block">
-                                                    <button type="button" class="btn header-item h-auto px-4 waves-effect d-flex justify-content-center align-items-center pb-4 pt-4 pr-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <span class="d-none d-xl-inline-block ms-1 prof-name text-left mr-3 pe-4">
-                                                            <span class="text-primary">Filter By Menu Category</span>
-                                                                <h5 class="mb-0 pb-0 text-black text-capitalize">All Categories</h5>
-                                                        </span>
-                                                        <i class="mdi mdi-chevron-down d-xl-inline-block font-size-20 pl-4 pr-4"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu dropdown-menu-end w-100 text-capitalize">
-                                                        <a class="d-flex px-3 pb-2 waves-effect dropdown-item active" href="javascript: void(0);"><span>All Categories</span></a>
-                                                        <a class="d-flex px-3 pb-2 waves-effect dropdown-item" href="javascript: void(0);"><span>Breakfast</span></a>
-                                                        <a class="d-flex px-3 pb-2 waves-effect dropdown-item" href="javascript: void(0);"><span>Main Course</span></a>
-                                                        <a class="d-flex px-3 pb-2 waves-effect dropdown-item" href="javascript: void(0);"><span>Hot Drinks</span></a>
-                                                        <a class="d-flex px-3 pb-2 waves-effect dropdown-item" href="javascript: void(0);"><span>Dessert</span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div>
-                                                <div class="dropdown d-inline-block">
-                                                    <button type="button" class="btn header-item h-auto px-4 waves-effect d-flex justify-content-center align-items-center pb-4 pt-4 pr-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="reportrange">
-                                                        <span class="d-none d-xl-inline-block ms-1 prof-name text-left mr-3 pe-4">
-                                                            <span class="text-primary">Filter By Date</span>
-                                                            <h5 class="mb-0 pb-0 text-black selected-date">Today</h5>
-                                                        </span>
-                                                        <i class="mdi mdi-chevron-down d-xl-inline-block font-size-20 pl-4 pr-4"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
+                                    <div class="d-flex justify-content-between">
+                                        <h4>Alex Wanjala</h4>
+                                        <div>
+                                            <input class="form-control" type="month" value="2019-08" id="example-month-input">
                                         </div>
-                                        <div class="text-right text-uppercase pr-4"><button type="button"
-                                                class="btn btn-outline-white waves-effect waves-light text-uppercase"><i
-                                                    class="mdi mdi-refresh font-size-24 align-middle me-2"></i> Reset Filters</button></div>
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -792,17 +761,50 @@
                                         <table id="datatable-buttons" class="table table-hover table-striped table-bordered">
                                             <thead class="table-dark text-capitalize">
                                                 <tr>
-                                                    <th>#</th>
-                                                    <th>Agent</th>
+                                                    <th>Date</th>
                                                     <th>Check In</th>
                                                     <th class="">Check Out</th>
-                                                    <th>Hours Workde</th>
-                                                    <th class="text-right">Actions</th>
-                                                                                                
+                                                    <th>Hours Worked</th>                                                                                                
                                                 </tr>
                                             </thead>
-                                            <tfoot class="table-light">
-                                                <tr>
+                                            <tfoot class="table-dark">
+                                                    <tr>
+                                                        <th colspan="3" >
+                                                            <div class="d-flex">
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="badge rounded-pill bg-danger float-start text-uppercase mr-3 mb-0 h-auto px-2" key="t-new">late</span>
+                                                                    <span class=" pl-1 pr-4">22 times</span>
+                                                                </div>
+    
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="badge rounded-pill bg-success float-start text-uppercase mr-3 mb-0 h-auto px-2" key="t-new">Early Checkins</span>
+                                                                    <span class=" pl-1 pr-4">22 times</span>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="badge rounded-pill bg-info float-start text-uppercase mr-3 mb-0 h-auto px-2" key="t-new">Ontime Checkins</span>
+                                                                    <span class=" pl-1 pr-4">22 times</span>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="badge rounded-pill bg-danger float-start text-uppercase mr-3 mb-0 h-auto px-2" key="t-new">Early Checkout</span>
+                                                                    <span class=" pl-1 pr-4">22 times</span>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="badge rounded-pill bg-warning float-start text-uppercase mr-3 mb-0 h-auto px-2" key="t-new">Forced checkout</span>
+                                                                    <span class=" pl-1 pr-4">22 times</span>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="badge rounded-pill bg-info float-start text-uppercase mr-3 mb-0 h-auto px-2" key="t-new">Normal Checkout</span>
+                                                                    <span class=" pl-1 pr-4">22 times</span>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            330 Hrs
+                                                        </th>
                                                     
                                                   </tr>
                                             </tfoot>
@@ -810,42 +812,27 @@
     
                                             <tbody class="table-sm">
                                               <tr>
-                                                <th>1.</th>
-                                                <td><a href="agent-reports.html">Alex Wanjala</a></td>
+                                                <th>30 Aug 2023</th>
                                                 <td class="table-danger"><span class="fw-semibold">8:05 AM</span> <span class="badge rounded-pill bg-danger float-end text-uppercase" key="t-new">late</span></td>
                                                 <td class="table-info"><span class="fw-semibold">8:05 AM</span> <span class="badge rounded-pill bg-info float-end text-uppercase" key="t-new">Normal</span></td>
                                                 <th>12 Hrs</th>
-                                                <td>
-                                                    <div class="d-flex justify-content-end">
-                                                        <button data-toggle="modal" data-target="#cashier-sales-details" class="btn btn-sm btn-success waves-effect wave-light mx-2"><i class="mdi mdi-eye-outline"></i> View Agent</button>
-                                                    </div>
-                                                </td>                                                
+                                                                                              
                                               </tr>
 
                                               <tr>
-                                                <th>2.</th>
-                                                <td><a href="agent-reports.html">kelvin kinoti</a></td>
+                                                <th>29 Aug 2023</th>
                                                 <td class="table-info"><span class="fw-semibold">7:35 AM</span> <span class="badge rounded-pill bg-info float-end text-uppercase" key="t-new">On Time</span></td>
                                                 <td class="table-warning"><span class="fw-bold">8:05 PM</span> <span class="badge rounded-pill bg-warning float-end text-uppercase" key="t-new">Forced Checkout</span></td>
                                                 <th>12 Hrs</th>
-                                                <td>
-                                                    <div class="d-flex justify-content-end">
-                                                        <button data-toggle="modal" data-target="#cashier-sales-details" class="btn btn-sm btn-success waves-effect wave-light mx-2"><i class="mdi mdi-eye-outline"></i> View Agent</button>
-                                                    </div>
-                                                </td>                                                
+                                                                                              
                                               </tr>
 
                                               <tr>
-                                                <th>3.</th>
-                                                <td><a href="agent-reports.html">Andrew kamau</a></td>
+                                                <th>28 Aug 2023</th>
                                                 <td class="table-success"><span class="fw-semibold">6:35 AM</span> <span class="badge rounded-pill bg-success float-end text-uppercase" key="t-new">Early Bird</span></td>
                                                 <td class="table-danger"><span class="fw-bold">8:05 PM</span> <span class="badge rounded-pill bg-danger float-end text-uppercase" key="t-new">Early Checkout</span></td>
                                                 <th>12 Hrs</th>
-                                                <td>
-                                                    <div class="d-flex justify-content-end">
-                                                        <button data-toggle="modal" data-target="#cashier-sales-details" class="btn btn-sm btn-success waves-effect wave-light mx-2"><i class="mdi mdi-eye-outline"></i> View Agent</button>
-                                                    </div>
-                                                </td>                                                
+                                                                                              
                                               </tr>
 
                                              
