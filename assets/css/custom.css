@@ -1299,3 +1299,55 @@
                 height: 100%;
                 background: linear-gradient(to right, #2fb895b8 0%, rgb(18 13 12 / 63%) 100%);
             }
+
+            .revenue-top .list-group-item{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .flip-x {
+                transform: scaleX(-1) !important;
+            }
+            .h-calc-25px{
+                height: calc(100% - 25px);
+            }
+        
+            .navbar.bg-primary,.mini-nav.bg-primary{
+                background-color:#00226c !important
+            }
+            .bg-primary-blue{
+                background-color: #023382;
+            }
+            .bg-primary-grad{
+                background: linear-gradient(to bottom right, #0066CC, #023382);
+            }
+            .text-warning-alt{
+                color: yellow !important;
+            }
+            .calc-heigt8{
+                height: calc(100% - 8px);
+            }
+            .bg-primary-alt{
+                background-color: #556ee6 !important;
+            }
+            .mouse-pointer{
+                cursor: pointer;
+            }
+            .performer-table   tr{
+                background-color: #ff00002b;
+                margin-bottom: 0.3rem !important;
+                display: inline-table;
+                width: 100%;
+            }
+        
+            .performer-table{
+                border-spacing: 0px 10px;
+            }
+            .weekly-chart{
+                height: 400px;
+            }
+            .vertical-align-middle{
+                vertical-align: middle !important;
+            }
+        
+            
+            
