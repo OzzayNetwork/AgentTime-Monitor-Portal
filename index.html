@@ -648,20 +648,23 @@
                             <div class="card bg-primary-blue bg-primary-grad" >
                                 <div class="card-header d-flex justify-content-between">
                                     <div>
-                                        <h4 class="card-title text-white">Weekly Overview</h4>
+                                        <h4 class="card-title text-white">Weekly Perfomance</h4>
                                         <p class="text-white">10th Sep 2023 to 17th Sep 2023</p>
                                     </div>
                                     <div>
-                                        <div class="float-end d-none">
+                                        <div class="float-end">
                                             <div class="input-group input-group-sm fw-semibold text-uppercase">
-                                                <label class="input-group-text text-uppercase">Subcounties</label>
-                                                <select class="form-select form-select-sm">
-                                                    <option value="JA" selected="">All Subcounties</option>
-                                                    <option value="DE">Homa Bay Town</option>
-                                                    <option value="NO">Rachuonyo N</option>
-                                                    <option value="OC">Rachuonyo S</option>
+                                                <label class="input-group-text text-uppercase">Department</label>
+                                                <select class="form-select form-select-sm" fdprocessedid="mzh2qeb">
+                                                    <option>All Departments</option>
+                                                    <option>CE Group</option>
+                                                    <option>Commercial</option>
+                                                    <option>DTH</option>
+                                                    <option>Dispatch</option>
                                                 </select>
-                                                
+
+                                               
+
                                             </div>
                                         </div>
                                     </div>
@@ -671,51 +674,63 @@
                                     <div class="row">
                                         <div class="col-6">
                                             <div class="border-1 border-white">
-                                                <h4 class="card-title text-white text-uppercase fw-semibold mb-3">Todays Highligts</h4>
-                                                <table class="table text-white table-sm fs-6 opacity-75 vertical-align-middle table-borderless performer-table text-uppercase">
-                                                    
+                                                <h4 class="card-title text-white text-uppercase fw-semibold mb-3">
+                                                    Top Perfoming Colectors</h4>
+                                                <table class="table text-white table-sm fs-6 opacity-7 vertical-align-middle table-borderless performer-table">
+                                                    <thead class="table-dark">
+                                                        <tr>
+
+                                                            <th colspan="3">Collector</th>
+                                                            <th class="text-right">Today</th>
+                                                            <th class="text-right">This Week</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tfoot class="table-dark ">
+                                                        <tr>
+
+                                                            <th colspan="5" class="text-center text-uppercase">
+                                                                <a href="live-monitoring.html">View all <span class="dripicons-arrow-thin-right"></span></a>
+                                                                <!-- once clicked filter all colectors with the highest perfoming selected based on their revenue target -->
+                                                            </th>
+                                                        </tr>
+                                                    </tfoot>
+
                                                     <tbody>
                                                         <tr class="">
-
-                                                            
-                                                            <td><div class="d-flex align-items-center"><span class="mdi mdi-menu-up fs-3 me-2 text-warning opacity-100"></span> Checked Inn Agents</div></td>                                                           
-                                                            <th class="text-right fw-semibold vertical-align-middle"><div class="d-flex align-items-center justify-content-end">456</div></th>
-
-                                                        </tr>
-
-                                                        <tr class="">
-
-                                                            
-                                                            <td><div class="d-flex align-items-center"><span class="mdi mdi-menu-down fs-3 me-2 text-danger opacity-100"></span> Absentees</div></td>                                                           
-                                                            <th class="text-right fw-semibold vertical-align-middle"><div class="d-flex align-items-center justify-content-end">456</div></th>
-
-                                                        </tr>
-
-                                                        <tr class="">
-
-                                                            
-                                                            <td><div class="d-flex align-items-center"><span class="mdi mdi-dots-horizontal-circle fs-3 me-2 text-info opacity-100"></span> Within Zone</div></td>                                                           
-                                                            <th class="text-right fw-semibold vertical-align-middle"><div class="d-flex align-items-center justify-content-end">456</div></th>
-
-                                                        </tr>
-
-                                                        <tr class="">
-
-                                                            
-                                                            <td><div class="d-flex align-items-center"><span class="mdi mdi-reload-alert fs-3 me-2 text-danger opacity-100"></span> Out Of Range</div></td>                                                           
-                                                            <th class="text-right fw-semibold vertical-align-middle"><div class="d-flex align-items-center justify-content-end">456</div></th>
+                                                            <th>
+                                                                <span class="mdi mdi-menu-up fs-3"></span>
+                                                            </th>
+                                                            <th>1.</th>
+                                                            <td>Kelvin Kinoti</td>
+                                                            <th class="text-right fw-semibold">78,000</th>
+                                                            <th class="text-right fw-semibold">458,900</th>
 
                                                         </tr>
 
                                                         <tr>
-                                                           
-                                                            <th>Total Agents</th>
-                                                            
-                                                            <th class="text-right fw-semibold">900</th>
+                                                            <th>
+                                                                <span class="mdi mdi-menu-up fs-3"></span>
+                                                            </th>
+                                                            <th>2.</th>
+                                                            <td>Amos Omondi</td>
+                                                            <th class="text-right fw-semibold">78,000</th>
+                                                            <th class="text-right fw-semibold">458,900</th>
 
                                                         </tr>
 
-                                                        
+                                                        <tr>
+                                                            <th>
+                                                                <span class="mdi mdi-menu-up fs-3"></span>
+                                                            </th>
+                                                            <th>3.</th>
+                                                            <td>Andrew Oduorry</td>
+                                                            <th class="text-right fw-semibold">78,000</th>
+                                                            <th class="text-right fw-semibold">458,900</th>
+
+                                                        </tr>
+
+
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -723,51 +738,59 @@
 
                                         <div class="col-6">
                                             <div class="border-1 border-white">
-                                                <h4 class="card-title text-white text-uppercase fw-semibold mb-3">This weeks Highlights</h4>
-                                                <table class="table text-white table-sm fs-6 opacity-75 vertical-align-middle table-borderless performer-table text-uppercase">
-                                                    
-                                                    <tbody>
-                                                        <tr class="">
-
-                                                            
-                                                            <td><div class="d-flex align-items-center"><span class="mdi mdi-menu-up fs-3 me-2 text-warning opacity-100"></span> Checked Inn Agents</div></td>                                                           
-                                                            <th class="text-right fw-semibold vertical-align-middle"><div class="d-flex align-items-center justify-content-end">456</div></th>
-
-                                                        </tr>
-
-                                                        <tr class="">
-
-                                                            
-                                                            <td><div class="d-flex align-items-center"><span class="mdi mdi-menu-down fs-3 me-2 text-danger opacity-100"></span> Absentees</div></td>                                                           
-                                                            <th class="text-right fw-semibold vertical-align-middle"><div class="d-flex align-items-center justify-content-end">456</div></th>
-
-                                                        </tr>
-
-                                                        <tr class="">
-
-                                                            
-                                                            <td><div class="d-flex align-items-center"><span class="mdi mdi-dots-horizontal-circle fs-3 me-2 text-info opacity-100"></span> Within Zone</div></td>                                                           
-                                                            <th class="text-right fw-semibold vertical-align-middle"><div class="d-flex align-items-center justify-content-end">456</div></th>
-
-                                                        </tr>
-
-                                                        <tr class="">
-
-                                                            
-                                                            <td><div class="d-flex align-items-center"><span class="mdi mdi-reload-alert fs-3 me-2 text-danger opacity-100"></span> Out Of Range</div></td>                                                           
-                                                            <th class="text-right fw-semibold vertical-align-middle"><div class="d-flex align-items-center justify-content-end">456</div></th>
-
-                                                        </tr>
-
+                                                <h4 class="card-title text-white text-uppercase fw-semibold mb-3">
+                                                    With Highest Absentism This Month</h4>
+                                                <table class="table bg-danger text-white table-sm fs-6 opacity-100 vertical-align-middle table-borderless performer-table">
+                                                    <thead class="table-dark ">
                                                         <tr>
-                                                           
-                                                            <th>Total Agents</th>
-                                                            
-                                                            <th class="text-right fw-semibold">900</th>
+                                                            <th colspan="3">Names</th>
+                                                            <th class="text-right">Instances</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tfoot class="table-dark ">
+                                                        <tr>
+
+                                                            <th colspan="5" class="text-center text-uppercase">
+                                                                <a href="live-monitoring.html">View all <span class="dripicons-arrow-thin-right"></span></a>
+                                                                <!-- once clicked filter the transactions with the lowest perfoming collector based on their revenue target -->
+                                                            </th>
+                                                        </tr>
+                                                    </tfoot>
+
+                                                    <tbody class="text-black">
+                                                        <tr class="">
+                                                            <td>
+                                                               <div class="d-flex align-items-center">
+                                                                    <span class="mdi mdi-menu-up fs-3"></span>
+                                                                    <span class="">Kelvin Kinoti</span>
+                                                               </div>
+                                                            </td>
+                                                            <th class="text-right fw-semibold">6</th>
 
                                                         </tr>
 
-                                                        
+                                                        <tr class="">
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="mdi mdi-menu-up fs-3"></span>
+                                                                    <span class="">Amos Wako</span>
+                                                               </div>
+                                                            </td>
+                                                            <th class="text-right fw-semibold">6</th>
+
+                                                        </tr>
+
+                                                        <tr class="">
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="mdi mdi-menu-up fs-3"></span>
+                                                                    <span class="">Lin Kinuthia</span>
+                                                               </div>
+                                                            </td>
+                                                            <th class="text-right fw-semibold">6</th>
+
+                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
