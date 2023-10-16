@@ -1334,7 +1334,7 @@
             }
             .performer-table   tr{
                 background-color: #ff00002b;
-                margin-bottom: 0.3rem !important;
+                /* margin-bottom: 0.3rem !important; */
                 display: inline-table;
                 width: 100%;
             }
@@ -1356,7 +1356,7 @@
 
             .performer-table tr {
                 background-color: #ff00002b;
-                margin-bottom: 0.3rem !important;
+                /* margin-bottom: 0.3rem !important; */
                 /* display: inline-table; */
                 width: 100%;
                 border-bottom: 4px solid #0157b7;
