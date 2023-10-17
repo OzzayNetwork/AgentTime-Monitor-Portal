@@ -1361,6 +1361,8 @@
                 width: 100%;
                 border-bottom: 4px solid #0157b7;
             }
-        
+            .offcanvas-start{
+                width: 505px;
+            }
             
             
