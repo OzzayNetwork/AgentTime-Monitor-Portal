@@ -742,12 +742,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Agents Trascker</h4>
+                                <h4 class="mb-sm-0 font-size-18">Agents Register</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboards</a></li>
-                                        <li class="breadcrumb-item active">Agents Tracker</li>
+                                        <li class="breadcrumb-item active">Agents Register</li>
                                     </ol>
                                 </div>
 
@@ -763,26 +763,18 @@
                         <div class="col-12">
                             <div class="card">
                                 
-                                <div class="card-header py-3 d-flex justify-content-between">
-                                    <div>
-                                        <small class="text-capitalize ">Select a Date:</small>
-                                        <div class="d-flex w-auto">
-                                            <input class="form-control w-auto" type="date" value="2019-08-19" id="example-date-input">
-                                        </div>
-                                    </div>
+                                <div class="card-header py-3 d-flex flex-wrap gap-2 bg-white border-bottom">
+                                    <button type="button" class="btn btn-primary waves-effect waves-light" fdprocessedid="76ciso" data-bs-toggle="modal" data-bs-target=".add-department">
+                                        <i class="mdi mdi-playlist-plus font-size-16 align-middle me-2"></i> Add Department
+                                    </button>
 
-                                    <div>
-                                        <small class="text-capitalize text-right">Department</small>
-                                        <div class="d-flex w-auto">
-                                            <select class="form-select">
-                                                <option>All Departments</option>
-                                                <option>CE Group</option>
-                                                <option>Commercial</option>
-                                                <option>DTH</option>
-                                                <option>Dispatch</option>
-                                            </select>
-                                        </div>
-                                    </div>
+                                    <button type="button" class="btn btn-secondary waves-effect waves-light" fdprocessedid="76ciso" data-bs-toggle="modal" data-bs-target=".add-zone">
+                                        <i class="mdi mdi-map-marker-multiple-outline font-size-16 align-middle me-2"></i> Add Zone
+                                    </button>
+
+                                    <button type="button" class="btn btn-info waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                        <i class="mdi mdi-account-multiple-plus-outline font-size-16 align-middle me-2"></i> Add Agent
+                                    </button>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
@@ -791,9 +783,11 @@
                                                 <tr>
                                                     <th>#</th>
                                                     <th>Agent</th>
-                                                    <th>Check In</th>
-                                                    <th class="">Check Out</th>
-                                                    <th>Hours Workde</th>
+                                                    <th>Role</th>
+                                                    <th>Department</th>
+                                                    <th>Zone(s)</th>
+                                                    <th class="">Phone</th>
+                                                    <th>Email</th>
                                                     <th class="text-right">Actions</th>
                                                                                                 
                                                 </tr>
@@ -806,45 +800,18 @@
     
     
                                             <tbody class="table-sm">
-                                              <tr>
+                                             <tr>
                                                 <th>1.</th>
-                                                <td><a href="agent-reports.html">Alex Wanjala</a></td>
-                                                <td class="table-danger"><span class="fw-semibold">8:05 AM</span> <span class="badge rounded-pill bg-danger float-end text-uppercase" key="t-new">late</span></td>
-                                                <td class="table-info"><span class="fw-semibold">8:05 AM</span> <span class="badge rounded-pill bg-info float-end text-uppercase" key="t-new">Normal</span></td>
-                                                <th>12 Hrs</th>
-                                               <td class="text-right">
-                                                   
-                                                       <a href="agent-reports.html" class="btn btn-sm btn-success waves-effect wave-light mx-2"><i class="mdi mdi-eye-outline"></i> View Agent</a>
-                                                   
-                                                </td>                                                 
-                                              </tr>
-
-                                              <tr>
-                                                <th>2.</th>
-                                                <td><a href="agent-reports.html">kelvin kinoti</a></td>
-                                                <td class="table-info"><span class="fw-semibold">7:35 AM</span> <span class="badge rounded-pill bg-info float-end text-uppercase" key="t-new">On Time</span></td>
-                                                <td class="table-warning"><span class="fw-bold">8:05 PM</span> <span class="badge rounded-pill bg-warning float-end text-uppercase" key="t-new">Forced Checkout</span></td>
-                                                <th>12 Hrs</th>
-                                                <td class="text-right">
-                                                   
-                                                        <a href="agent-reports.html" class="btn btn-sm btn-success waves-effect wave-light mx-2"><i class="mdi mdi-eye-outline"></i> View Agent</a>
-                                                   
-                                                </td>                                                
-                                              </tr>
-
-                                              <tr>
-                                                <th>3.</th>
-                                                <td><a href="agent-reports.html">Andrew kamau</a></td>
-                                                <td class="table-success"><span class="fw-semibold">6:35 AM</span> <span class="badge rounded-pill bg-success float-end text-uppercase" key="t-new">Early Bird</span></td>
-                                                <td class="table-danger"><span class="fw-bold">8:05 PM</span> <span class="badge rounded-pill bg-danger float-end text-uppercase" key="t-new">Early Checkout</span></td>
-                                                <th>12 Hrs</th>
-                                               <td class="text-right">                                                   
-                                                       <a href="agent-reports.html" class="btn btn-sm btn-success waves-effect wave-light mx-2"><i class="mdi mdi-eye-outline"></i> View Agent</a>
-                                                   
-                                                </td>                                                 
-                                              </tr>
-
-                                             
+                                                <td>Aphline Odoyo</td>
+                                                <td>Supervisor</td>
+                                                <td>Department Name</td>
+                                                <td>Pwani12</td>
+                                                <td>0704549859</td>
+                                                <td>email@email.com</td>
+                                                <td>
+                                                    <button class="btn btn-primary btn-sm">Edit</button>
+                                                </td>
+                                             </tr>
                                              
                                             </tbody>
                                         </table>
@@ -866,74 +833,113 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="transaction-detailModalLabel">Transactions Details</h5>
+                            <h5 class="modal-title" id="transaction-detailModalLabel">Add An Agent</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <label for="">Agent's Full Name</label>
+                                    <input type="text " class="form-control" placeholder="Enter Full Names">
+                                </div>
 
+                                <div class="col-12 mb-3">
+                                    <label for="">Role</label>
+                                    <input type="text " class="form-control" placeholder="Enter Role">
+                                </div>
 
-                            <div class="table-responsive mt-4">
-                                <table class="table align-middle table-nowrap">
-                                    <tbody>
-                                        <tr>
-                                            <td style="width: 30%">
-                                                <p class="mb-0">Car Plate Number</p>
-                                            </td>
-                                            <td style="width: 25%">
-                                                <h5 class="mb-0 text-uppercase">UAG 1235p</h5>
-                                            </td>
+                                <div class="col-12 mb-3">
+                                    <label for="">Phone</label>
+                                    <input type="text " class="form-control" placeholder="Enter Phone No.">
+                                </div>
 
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="mb-0">Vehicle Category</p>
-                                            </td>
-                                            <td>
-                                                <h5 class="mb-0">Salon Car</h5>
-                                            </td>
+                                <div class="col-12 mb-3">
+                                    <label for="">Email</label>
+                                    <input type="text " class="form-control" placeholder="Enter Email">
+                                </div>
 
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="mb-0">Payment Date</p>
-                                            </td>
-                                            <td>
-                                                <h5 class="mb-0">22 Apr 2022 06:54PM</h5>
-                                            </td>
+                                <div class="col-12 mb-3">
+                                    <label for="">Department</label>
+                                    <select name="" class="form-select" id="">
+                                        <option value="Department">Department 1</option>
+                                        <option value="Department">Department 1</option>
+                                        <option value="Department">Department 1</option>
+                                        <option value="Department">Department 1</option>
+                                        <option value="Department">Department 1</option>
+                                    </select>
+                                </div>
 
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="mb-0">San Diego</p>
-                                            </td>
-                                            <td>
-                                                <h5 class="mb-0">1,026</h5>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">
-                                                <p class="mb-0 pb-0">Amount Paid</p>
-                                                <h3>UGX 2,000</h3>
-                                            </td>
-                                        </tr>
-                                        <TR>
-                                            <td col-span="2">
-                                                <p class="mb-2">Attended By<span class="text-primary"> Alex Sebeye</span></p>
-                                                <p class="mb-4">Toll taker's No. <span class="text-primary">0704549859</span></p>
-                                            </td>
-                                        </TR>
-                                    </tbody>
-                                </table>
+                                <div class="col-12 mb-3">
+                                    <label for="">Zone</label>
+                                    <select name="" class="form-select" id="" multiple>
+                                        <option value="Department">Department 1</option>
+                                        <option value="Department">Department 1</option>
+                                        <option value="Department">Department 1</option>
+                                        <option value="Department">Department 1</option>
+                                        <option value="Department">Department 1</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success w-100" data-bs-dismiss="modal">Add Agent</button>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- end modal -->
+
+            <!-- adding zone -->
+            <div class="modal fade add-zone" tabindex="-1" role="dialog" aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="transaction-detailModalLabel">Add A Zone</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <div class="row">
+                                <div class="col-12">
+                                    <div>
+                                        <label for="">Zone Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter Zone Name">
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success w-100" data-bs-dismiss="modal">Add Zone</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of adding zone -->
+
+            <!-- adding department -->
+            <div class="modal fade add-department" tabindex="-1" role="dialog" aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="transaction-detailModalLabel">Add A Zone</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <div class="row">
+                                <div class="col-12">
+                                    <div>
+                                        <label for="">Department Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter Department name">
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success w-100" data-bs-dismiss="modal">Add Department</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of adding department -->
 
             <!-- filter right of canvus -->
             <div class="offcanvas offcanvas-end" tabindex="-1" id="dt__filter" aria-labelledby="offcanvasRightLabel">
