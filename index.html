@@ -813,6 +813,27 @@
                                 <div class="card-body weekly-chart" id="weekly-rev">
 
                                 </div>
+
+                               <div class="card-body">
+                                <div class="mb-4 mt-3 d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h4 class="card-title text-white">Daily Attendance by Department</h4>
+                                        <span class="text-white">12 Jan 2023</span>
+                                    </div>
+
+                                    <div>
+                                        <div class="float-end">
+                                            <div class="input-group input-group-sm fw-semibold text-uppercase">
+                                                <label class="input-group-text text-uppercase">Select Date</label>
+                                                <input class="form-control" type="date" value="2019-08-19" id="example-date-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="staff-attendance">
+
+                                </div>
+                               </div>
                             </div>
                             <!--end card-->
                         </div>
@@ -863,8 +884,39 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header d-flex justify-content-between bg-white">
+                                            <div>
+                                                <h4 class="card-title">Annual Attendance</h4>
+                                                <p class="">2023</p>
+                                            </div>
+                                            <div>
+                                                <div class="float-end">
+                                                    <div class="input-group input-group-sm fw-semibold text-uppercase">
+                                                        <label class="input-group-text text-uppercase">Department</label>
+                                                        <select class="form-select form-select-sm" fdprocessedid="mzh2qeb">
+                                                            <option>All Departments</option>
+                                                            <option>CE Group</option>
+                                                            <option>Commercial</option>
+                                                            <option>DTH</option>
+                                                            <option>Dispatch</option>
+                                                        </select>
+        
+                                                       
+        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="attendance-chart-container"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
 
-                                <div class="col-sm-12 col-md-6">
+                                <div class="col-sm-12 col-md-6 d-none">
                                    <div class="card">
                                     <div class="card-body">
                                         <div class="d-flex align-items-center me-3 pe-3">
@@ -875,7 +927,7 @@
                                    </div>
                                 </div>
 
-                                <div class="col-sm-12 col-md-6">
+                                <div class="col-sm-12 col-md-12">
                                     <div class="card">
                                         <div class="card-header bg-white border-bottom">
                                             
@@ -1451,6 +1503,8 @@
 <script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+
 <!-- highchart js files -->
 <script src="https://code.highcharts.com/modules/heatmap.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
@@ -1652,6 +1706,112 @@
         }
       ]
     });
+    </script>
+
+    <script>
+        Highcharts.chart('attendance-chart-container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: null
+    },
+    subtitle: {
+        text:null
+    },
+    xAxis: {
+        categories: [
+            'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+        ],
+        labels: {
+            style: {
+                fontSize: '13px',
+                fontFamily: 'Montserrat, sans-serif'
+            }
+        }
+    },
+    yAxis: [{
+        title: {
+            text: 'Attendance'
+        },
+        labels: {
+            format: '{value}',
+            style: {
+                color: 'blue' // Color for the Attendance axis labels
+            }
+        }
+    }, {
+        title: {
+            text: 'Absenteeism',
+            style: {
+                color: 'red' // Color for the Absenteeism axis labels
+            }
+        },
+        opposite: true
+    }],
+    legend: {
+        enabled: true
+    },
+    tooltip: {
+        shared: true
+    },
+    series: [
+        {
+            name: 'Attendance',
+            data: [100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320],
+            yAxis: 0,
+           
+        },
+        {
+            type: 'line',
+            name: 'Absenteeism',
+            data: [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65],
+            yAxis: 1,
+            color:"red"
+        }
+    ]
+});
+
+    </script>
+
+    <script>
+        Highcharts.chart('staff-attendance', {
+    chart: {
+        type: 'pie',
+        options3d: {
+            enabled: true,
+            alpha: 45
+        },
+        backgroundColor: 'transparent' // Set the background to transparent
+    },
+    title: {
+        text: null,
+        align: 'left'
+    },
+    subtitle: {
+        text: null,
+        align: 'left'
+    },
+    plotOptions: {
+        pie: {
+            innerSize: 100,
+            depth: 45,
+            colors: ['#ff6600', '#ffcc00', '#33cc33', '#ff3333']
+            // Different colors for each department
+        }
+    },
+    series: [{
+        name: 'Staff Attendance',
+        data: [
+            ['CE Group', 16],
+            ['Commercial', 12],
+            ['DTH', 8],
+            ['Departch', 3]
+        ]
+    }]
+});
+
     </script>
     
     
