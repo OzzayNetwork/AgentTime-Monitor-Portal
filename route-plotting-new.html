@@ -856,12 +856,13 @@
                         <div class="col-12">
 
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Map view</h4>
+                                <h4 class="mb-sm-0 font-size-18">Journey and Route Assignement</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item active">map View</li>
+                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="">Route Plotting</a></li>
+                                        <li class="breadcrumb-item active">Create New Journey</li>
                                     </ol>
                                 </div>
 
@@ -889,16 +890,88 @@
                                     </div>
 
                                 </div>
+                                <div class="card-header bg-white mb-0">
+                                    <h4 class="mb-0 fe-bold text-black text-uppercase">Location Points Searching</h4>
+                                </div>
                                 <div class="card-body">
                                     <div class="row">
                                         
                                         <div class="col-8">
-                                            <h4>Seacrh For Locations</h4>
+                                           
                                             <div id="map" class="w-100 mt-1 h-100 live-map-cont main-map-container"></div>
                                         </div>
                                         <div class="col-4">
-                                            <div class="row">
-                                                
+                                            <div class="row d-flex align-content-between h-100">
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <h4 class="mb-3 fe-bold text-black text-uppercase">Journey Particulers</h4> 
+                                                            
+                                                        </div>
+                                                        <div class="col-12 mb-3">
+                                                            <label for="A">Assigned To</label>
+                                                            <input type="text" class="form-control" placeholder="Enter ID number fo the officer">
+                                                        </div>
+        
+                                                        <div class="col-12 mb-3">
+                                                            <label for="A">Start Date & Time</label>
+                                                            <input class="form-control" type="datetime-local" value="2019-08-19T13:45:00" id="example-datetime-local-input">
+                                                        </div>
+        
+                                                        <div class="col-12 mt-3">
+                                                            <label for="A" class="fw-bold text-uppercase mb-0">Journey Check Points and Details</label>
+                                                            <p><small>22 Check points</small></p>
+                                                           <div class="table-responsive">
+                                                            <table class="table vertical-align-middle table-sm table-stripped table-striped">
+                                                                <thead>
+                                                                    <tr class="table-dark">
+                                                                        <th>Node Type</th>
+                                                                        <th>Station Address</th>
+                                                                        <th>Tasks</th>
+                                                                        <th></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    
+                                                                    <tr>
+                                                                        <th>Start Point</th>
+                                                                        <td>Mwindi Mbingu street</td>
+                                                                        <td>4 Tasks</td>
+                                                                        <td class="text-right">
+                                                                            <button title="View Item" type="button" class="btn btn-link waves-effect" fdprocessedid="ahck98"><i class="mdi mdi-eye-outline font-size-16 align-middle me-2"></i></button>
+                                                                        </td>
+                                                                    </tr>
+        
+                                                                    <tr>
+                                                                        <th>Stop Over 1</th>
+                                                                        <td>Mwindi Mbingu street</td>
+                                                                        <td>6 Tasks</td>
+                                                                        <td class="text-right">
+                                                                            <button title="View Item" type="button" class="btn btn-link waves-effect" fdprocessedid="ahck98"><i class="mdi mdi-eye-outline font-size-16 align-middle me-2"></i></button>
+        
+                                                                            <button title="Remove Item" type="button" class="btn btn-link waves-effect text-danger" fdprocessedid="g0nk0j"><i class="mdi mdi-close font-size-16 align-middle me-2"></i></button>
+        
+                                                                        </td>
+                                                                    </tr>
+        
+                                                                    <tr>
+                                                                        <th>Stop Over 2</th>
+                                                                        <td>Mwindi Mbingu street</td>
+                                                                        <td>1 Task</td>
+                                                                        <td class="text-right"></td>
+                                                                    </tr>
+        
+        
+        
+                                                                </tbody>
+                                                            </table>
+                                                           </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button class="text-uppercase text-center w-100 btn btn-primary">Create Journey</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1667,7 +1740,7 @@
     <!-- script for the receipting -->
     <script src="assets/js/payment-method.js "></script>
     <!-- the map -->
-    <script src="assets/js/map.js "></script>
+    <script src="assets/js/map-route.js "></script>
 
     <!-- axios to be used for geocoding -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js " integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin=" anonymous "></script>
