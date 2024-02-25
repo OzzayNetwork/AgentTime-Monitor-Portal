@@ -186,24 +186,16 @@ function initMap() {
         origin: new google.maps.Point(0, 0), // origin
         anchor: new google.maps.Point(0, 0) // anchor
     }
-
-
-
-
-
-
     //the map options
     var options = {
         zoom: 13,
         center: {lat: -1.29889, lng: 36.8386003 }
     }
-
-
     //new map
     var map = new google.maps.Map(document.getElementById('map'), options);
 
 
-    /*
+
 
     //add marker
     var marker=new google.maps.Marker({
@@ -212,14 +204,12 @@ function initMap() {
         icon: hall_icon
     });
 
-    var infowindow=new google.maps.InfoWindow({
-        content:'<h1>City Hall</h1>'
-    });
+  
 
     marker.addListener('click', function(){
         infowindow.open(map,marker);
     });
-    */
+    
 
     var gmarkers = [];
 
@@ -292,65 +282,14 @@ function initMap() {
         //opens the side bar form
         $('#newPoint').removeClass('left-100').siblings().addClass('left-100');
 
+        var theCanvas = new bootstrap.Offcanvas(newPoint)
+        theCanvas.show()
+
         // alert("ready");
         // $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
         // alert("ready");
     });
 
-   
-
-    //inactive agent
-    addMarker({
-        coords: { lat: -1.29889, lng: 36.8386003 },
-        iconImage: inactiveAgent,
-        content: '<p class="d-none">agent|plate num</p><h6 class="text-capitalize d-flex align-items-center"><span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span></h6> <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p><p>Most recent activity: <strong>Account Loggin at 11:41PM</strong><div class="listview text-align-left text-capitalize pl-0">  <div class="listview__header text-align-left text-capitalize text-left"><strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong></div> <div class="progress"> <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> </div></div></p> '
-    });
-
-    //active agent
-    addMarker({
-        coords: { lat: -1.3289, lng: 36.8452003 },
-        iconImage: activeAgent,
-        content: `<p class="d-none">agent|plate num</p>
-            <h6 class="text-capitalize d-flex align-items-center">
-            <span class="offline-agent mr-2"></span> 
-            <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span>
-            </h6>
-             <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
-             <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
-             <div class="listview text-align-left text-capitalize pl-0">  
-             <div class="listview__header text-align-left text-capitalize text-left">
-             <strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong>
-             </div> 
-             <div class="progress"> 
-             <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-             </div>
-             </div>
-             </p> `
-    });
-
-   
-
-    //incidents
-
-    // addMarker({
-    //     coords: { lat: -1.29948, lng: 36.8751453 },
-    //     iconImage: warning,
-    //     content: `<p class="d-none">incident|identifiret</p>
-    //         <img class="mb-3" src="demo/img/widgets/photo-1564993719576-7b00be6317cd.jpg" alt=""> 
-    //         <h6> Violent Nairobian</h6> 
-    //         <p class="mb-0 pb-0">Reported By Tonny Jumba</p>
-    //         <strong class="text-info">20 Min Ago</strong>`
-    // });
-
-   
-
-    //buss park
-    //not applicable
-    //  addMarker({
-    //     coords:{lat:-1.2867576,lng:36.8344851},
-    //     iconImage:bus,
-    //     content: '<p class="d-none">offstreetParking|identifier</p><h6>Bus Park (Offstreet Parking)</h6> <P><strong>KES 3,256,230</strong> already collected</p>'
-    // });
 
    
     //add marker function
@@ -747,7 +686,7 @@ function initMap() {
                     title: place.name,
                     position: place.geometry.location,
                     icon: icon,
-                    description: `<strong>` + place.name + `</strong><br><p class="text-info text-underline">Click Icon for more options</p>`
+                    description: `<strong>` + place.name + `</strong><br><p class="text-info text-underline">Click Icon To Add Check Point</p>`
                 })
                 markers.push(marker);
 
@@ -810,6 +749,9 @@ function initMap() {
 
                     newCoords = newCoords.toString();
 
+                    var address = place.formatted_address;
+                    
+
                     var Latitude;
                     var longitude;
                     longitude = newCoords.substring(newCoords.lastIndexOf(",") + 1);
@@ -820,6 +762,9 @@ function initMap() {
                     reverseGeocoding(Latitude, longitude);
                     $('#newPoint').removeClass('left-100').siblings().addClass('left-100');
 
+                    var theCanvas = new bootstrap.Offcanvas(newPoint)
+                    theCanvas.show()
+
                     var thePlaceHolder = $('.listview .selected-point-details');
 
                     thePlaceHolder = `
@@ -827,6 +772,9 @@ function initMap() {
                     <p class="clicked-place">${thePlace}</p>
                     `;
                     toggleBounce(marker);
+                  
+                    $('#newPoint .location-name').text(thePlace)
+                    $('#newPoint .location-address').text(address)
 
 
 

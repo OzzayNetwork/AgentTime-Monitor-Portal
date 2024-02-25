@@ -32,9 +32,6 @@
     <!-- custom Css-->
     <link href="assets/css/custom.css" id="app-style" rel="stylesheet" type="text/css" />
 
-     <!-- map Css-->
-     <link href="assets/css/map.css" id="app-style" rel="stylesheet" type="text/css" />
-
 
 </head>
 
@@ -88,7 +85,7 @@
 
                                     <div class="form-group mb-3">
                                         <label for="">Contact Group</label>
-                                        <select class="form-control selectpicker form-select text-black " data-live-search="true" title="Select UOM" data-style="form-select btn border text-black">
+                                        <select class="form-control selectpicker form-select text-black" data-live-search="true" title="Select UOM" data-style="form-select btn border text-black">
                                             <option value="" selected>None</option>
                                             <option value="">Customers</option>   
                                             <option value="">Suppliers</option> 
@@ -749,104 +746,6 @@
         <!-- Start right Content here -->
         <!-- ============================================================== -->
         <div class="main-content">
-            <!-- trip details modal -->
-            <div class="modal fade trip-details-modal" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5>Kelvin's trip details</h5>
-
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-
-                            <div class="d-flex align-items-center">
-                                <div class="flex-shrink-0 me-3">
-                                    <div class="avatar-xs">
-                                        <span class="avatar-title rounded-circle bg-primary bg-soft text-primary text-uppercase">
-                                            <strong>KN</strong>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="flex-grow-1">
-                                    <h5 class="modal-title">Trip With Alex</h5>
-                                    <p class="mb-0 pb-0"><span class="text-muted">Sat, 26 Feb 2022</span></p>
-                                </div>
-                            </div>
-
-
-                            <div class="mb-3 row">
-                                <div class="col-12 pt-4">
-                                    <ul class="verti-timeline list-unstyled mt-3">
-                                        <li class="event-list active">
-                                            <div class="event-timeline-dot">
-                                                <i class="bx bxs-right-arrow-circle font-size-18"></i>
-                                            </div>
-                                            <div class="d-flex">
-                                                <div class="flex-shrink-0 me-3">
-                                                    <h5 class="font-size-14">16:05 <i class="bx bx-right-arrow-alt font-size-16 text-primary align-middle ms-2"></i></h5>
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <div>
-                                                        Accra Road
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="event-list">
-                                            <div class="event-timeline-dot">
-                                                <i class="bx bx-right-arrow-circle font-size-18"></i>
-                                            </div>
-                                            <div class="d-flex">
-                                                <div class="flex-shrink-0 me-3">
-                                                    <h5 class="font-size-14">On Transit <i class="bx bx-right-arrow-alt font-size-16 text-primary align-middle ms-2"></i></h5>
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <div>
-                                                        Embakasi
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                                <div class="col-12 pt-4">
-                                    <h6 class="text-capitalize">2KM To go</h6>
-
-                                </div>
-                                <div class="col-12 pt-4">
-                                    <h6>Payment</h6>
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <td>Fare. Reguler cab</td>
-                                                <td class="text-right">KES 250.00</td>
-                                            </tr>
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Pending</th>
-                                                <th class="text-right">Waiting</th>
-                                            </tr>
-
-                                        </tfoot>
-
-                                    </table>
-
-                                </div>
-                            </div>
-                            <button class="btn btn-primary"><i class="bx bx-printer font-size-16 align-middle me-2"></i>Print Receipt</button>
-                            <button class="btn btn-outline-primary waves-effect"><i class="mdi mdi-email-send-outline font-size-16 align-middle me-2"></i>Resend Receipt</button>
-
-                        </div>
-                    </div>
-                    <!-- /.modal-content -->
-                </div>
-                <!-- /.modal-dialog -->
-            </div>
-            <!-- trip details modal -->
 
             <div class="page-content">
                 <div class="container-fluid">
@@ -854,244 +753,211 @@
                     <!-- start page title -->
                     <div class="row">
                         <div class="col-12">
-
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Journey and Route Assignement</h4>
+                                <h4 class="mb-sm-0 font-size-18">Daily Attendace</h4>
 
                                 <div class="page-title-right">
-                                    <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="">Route Plotting</a></li>
-                                        <li class="breadcrumb-item active">Create New Journey</li>
+                                    <ol class="breadcrumb m-0 text-uppercase">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboards</a></li>
+                                        <li class="breadcrumb-item active">Daily attendance</li>
                                     </ol>
                                 </div>
+
 
                             </div>
                         </div>
                     </div>
                     <!-- end page title -->
 
-
-
+                    <!-- eTransactions table -->                   
 
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div class="card-header bg-white boarder-bottom-1 d-none">
-                                    <div class="row d-flex justify-content-between">
-                                        <div class="col-12">
-                                            <div class="search-box mb-2 me-2">
-                                                <div class="position-relative">
-                                                    <input type="text" class="form-control bg-light border-light rounded map-searcher" id="pac-inpu" placeholder="Search for location">
-                                                    <i class="bx bx-search-alt search-icon"></i>
-                                                </div>
-                                            </div>
-                                        </div>
+                                
+                                <div class="card-header py-3">
+                                    <small class="text-capitalize">Select A Month:</small>
+                                    <div class="d-flex w-auto">
+                                        <input class="form-control w-auto" type="month" value="2023-08" id="example-month-input">
                                     </div>
-
-                                </div>
-                                <div class="card-header bg-white mb-0">
-                                    <h4 class="mb-0 fe-bold text-black text-uppercase">Location Points Searching</h4>
                                 </div>
                                 <div class="card-body">
-                                    <div class="row">
-                                        
-                                        <div class="col-8">
-                                           
-                                            <div id="map" class="w-100 mt-1 h-100 live-map-cont main-map-container"></div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="row d-flex align-content-between h-100">
-                                                <div class="col-12">
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <h4 class="mb-3 fe-bold text-black text-uppercase">Journey Particulers</h4> 
-                                                            
-                                                        </div>
-                                                        <div class="col-12 mb-3">
-                                                            <label for="A">Assigned To</label>
-                                                            <input type="text" class="form-control" placeholder="Enter ID number fo the officer">
-                                                        </div>
-        
-                                                        <div class="col-12 mb-3">
-                                                            <label for="A">Start Date & Time</label>
-                                                            <input class="form-control" type="datetime-local" value="2019-08-19T13:45:00" id="example-datetime-local-input">
-                                                        </div>
-        
-                                                        <div class="col-12 mt-3">
-                                                            <label for="A" class="fw-bold text-uppercase mb-0">Journey Check Points and Details</label>
-                                                            <p><small>22 Check points</small></p>
-                                                           <div class="table-responsive">
-                                                            <table class="table vertical-align-middle table-sm table-stripped table-striped">
-                                                                <thead>
-                                                                    <tr class="table-dark">
-                                                                        <th>Node Type</th>
-                                                                        <th>Station Address</th>
-                                                                        <th>Tasks</th>
-                                                                        <th></th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody class="selected-addresses">
-                                                                    
-                                                                   <tr class="intial-row">
-                                                                        <th colspan="4">
-                                                                            Add Check Points To Display
-                                                                        </th>
-                                                                   </tr>
-        
-        
-                                                                </tbody>
-                                                            </table>
-                                                           </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <button class="text-uppercase text-center w-100 btn btn-primary">Create Journey</button>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="table-responsive">
+                                        <table id="#" class="table table-hover table-striped table-bordered">
+                                            <thead class="table-dark text-capitalize">
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Total Check-Ins</th>
+                                                    <th>Absentees</th>
+                                                    <th class="">Totals</th>
+                                                    <th></th>
+                                                                             
+                                                </tr>
+                                            </thead>
+                                            <tfoot class="table-dark">
+                                                <tr>
+                                                    <th>30 Days</th>
+                                                    <th class="text-success"> 3456</th>
+                                                    <th class="text-danger">789</th>
+                                                    <th class="text-info">3456</th>
+                                                    <th class="text-right"></th>
+                                                    
+                                                  </tr>
+                                            </tfoot>
+    
+    
+                                            <tbody class="table-sm">
+                                              <tr>
+                                                <th>31 Aug 2023</th>
+                                                <td>
+                                                    <span class="fw-bold text-success">234</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-bold text-danger">20</span>
+                                                </td>  
+                                                
+                                                <td>
+                                                    <span class="fw-bold text-black">254</span>
+                                                </td> 
+                                                <td class="text-right">
+                                                    <a href="attendance-daily-report.html" class="btn btn-primary btn-sm">View Daily Report</a>
+                                                </td> 
+                                              </tr>
+
+                                              <tr>
+                                                <th>30 Aug 2023</th>
+                                                <td>
+                                                    <span class="fw-bold text-success">234</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-bold text-danger">20</span>
+                                                </td>  
+                                                
+                                                <td>
+                                                    <span class="fw-bold text-black">254</span>
+                                                </td>  
+                                                <td class="text-right">
+                                                    <a href="attendance-daily-report.html" class="btn btn-primary btn-sm">View Daily Report</a>
+                                                </td> 
+                                              </tr>
+
+                                              <tr>
+                                                <th>29 Aug 2023</th>
+                                                <td>
+                                                    <span class="fw-bold text-success">234</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-bold text-danger">20</span>
+                                                </td>  
+                                                
+                                                <td>
+                                                    <span class="fw-bold text-black">254</span>
+                                                </td>  
+                                                <td class="text-right">
+                                                    <a href="attendance-daily-report.html" class="btn btn-primary btn-sm">View Daily Report</a>
+                                                </td> 
+                                              </tr>
+
+                                              
+                                              <tr>
+                                                <th>28 Aug 2023</th>
+                                                <td>
+                                                    <span class="fw-bold text-success">234</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-bold text-danger">20</span>
+                                                </td>  
+                                                
+                                                <td>
+                                                    <span class="fw-bold text-black">254</span>
+                                                </td> 
+                                                <td class="text-right">
+                                                    <a href="attendance-daily-report.html" class="btn btn-primary btn-sm">View Daily Report</a>
+                                                </td>  
+                                              </tr>
+
+                                              
+                                              <tr>
+                                                <th>27 Aug 2023</th>
+                                                <td>
+                                                    <span class="fw-bold text-success">234</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-bold text-danger">20</span>
+                                                </td>  
+                                                
+                                                <td>
+                                                    <span class="fw-bold text-black">254</span>
+                                                </td> 
+                                                <td class="text-right">
+                                                    <a href="attendance-daily-report.html" class="btn btn-primary btn-sm">View Daily Report</a>
+                                                </td>  
+                                              </tr>
+
+                                              
+                                              <tr>
+                                                <th>26 Aug 2023</th>
+                                                <td>
+                                                    <span class="fw-bold text-success">234</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-bold text-danger">20</span>
+                                                </td>  
+                                                
+                                                <td>
+                                                    <span class="fw-bold text-black">254</span>
+                                                </td> 
+                                                <td class="text-right">
+                                                    <a href="attendance-daily-report.html" class="btn btn-primary btn-sm">View Daily Report</a>
+                                                </td>  
+                                              </tr>
+
+                                             
+
+                                             
+                                             
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
+                                <div class="card-footer bg-white">
+                                    <nav aria-label="Page navigation example " class="d-flex align-items-center justify-content-between">
 
-                            </div>
-
-                            <div class="">
-                                <div class="position-relative ">
-
-
-                                    <!-- map serach input box -->
-                                    <div class="form-group map-searcher">
-
-                                        <input type="text" class="form-control form-control-lg text-black" placeholder="Search for a location" id="pac-input">
-                                        <button title="Clear search results" class="btn btn-transparent border-0 clear-map"><i class="mdi mdi-close d-none"></i></button>
-                                    </div>
-
-                                    <!-- key button -->
-                                    
-
-                                    <!-- key items -->
-                                    <div class="card map-card animated slideInLeft d-none">
-                                        <span class="close-map-key"><i class="zmdi zmdi-close"></i></span>
-                                        <div class="card-body">
-                                            <h4 class="card-title">Map Key</h4>
-
+                                        <div class="d-flex align-items-center">
+                                            <span class="pr-3 pb-0 mb-0 font-13px">
+                                                <span>Rows Per Page</span>
+                                            </span>
+                                            <select class="form-select w-auto font-13px ">
+                                                <option value="10">10 Rows</option>
+                                                <option value="25">25 Rows</option>
+                                                <option value="50">50 Rows</option>
+                                                <option value="100">100 Rows</option>
+                                                <option value="150">150 Rows</option>
+                                                <option value="200">200 Rows</option>
+                                            </select>
                                         </div>
-                                        <div class="listview py-4 map-key">
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/damaged.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Damaged Ad Plates</strong></div>                        
-                                                    </div>
-                                                </span>
 
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/available.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Available Ad Plates</strong></div>                        
-                                                    </div>
-                                                </span>
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/rented.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Rented Ad Plates</strong></div>                        
-                                                    </div>
-                                                </span>
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/multiple-plates.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Multiple sided Ad Plates</strong></div>                        
-                                                    </div>
-                                                </span>
-
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/rejected.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Rejected Applications</strong></div>                        
-                                                    </div>
-                                                </span>
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/pending.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Pending applications</strong></div>                        
-                                                    </div>
-                                                </span>
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/approved.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Approved Applications</strong></div>                        
-                                                    </div>
-                                                </span>
-
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/warning.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Incidents</strong></div>                        
-                                                    </div>
-                                                </span>
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/active-agent.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>active-agent</strong></div>                        
-                                                    </div>
-                                                </span>
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/inactive-agent.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Inactive agents</strong></div>                        
-                                                    </div>
-                                                </span>
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/parliament.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>City Hall</strong></div>                        
-                                                    </div>
-                                                </span>
-
-
-                                            <span class="listview__item py-0">
-                                                    <img src="assets/images/map-assets/flag.svg" class="listview__img" alt="">
-                                
-                                                    <div class="listview__content d-flex align-items-center">
-                                                        <div class="listview__heading"><strong>Service/Collection Point</strong></div>                        
-                                                    </div>
-                                                </span>
-
-
-
-                                        </div>
-                                    </div>
-
+                                        <ul class="pagination">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active">
+                                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
                                 </div>
-
                             </div>
                         </div>
                         <!-- end col -->
                     </div>
+
                     <!-- end row -->
-
-
-
                 </div>
                 <!-- container-fluid -->
             </div>
@@ -1169,126 +1035,23 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Bill Receipting -->
-            <div class="modal fade receipting-Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header text-capitalize">
-                            <h5 class="modal-title" id="#">Receipt The bill (Bill No. 123456)</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label for="">Select Payment Method</label>
-                                        <select name="" class="form-select select-payment-method" id="">
-                                            <option value="Mpesa">MPESA</option>
-                                            <OPtion value="cash">Cash</OPtion>
-                                            <option value="Bank">Bank</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label for="">Payer's Name</label>
-                                        <!--  by default this should be the name to the driveer selected from the Db -->
-                                        <input type="text" value="Kelvin Njuguna" class="form-control" placeholder="Enter payer's name" name="" id="">
-                                        <small>You can change if the payer is different from the driver</small>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label for="">Phone No.</label>
-                                        <!--  Directly from the DB -->
-                                        <input type="text" value="0704549859" class="form-control" placeholder="Enter payer's name" name="" id="">
-                                        <small>You can change if the payer is different from the driver</small>
-                                    </div>
-                                </div>
-
-                                <div class="mb-4">
-                                    <label>Payment Date</label>
-                                    <div class="input-group" id="datepicker2">
-                                        <input type="text" class="form-control" placeholder="dd M, yyyy" data-date-format="dd M, yyyy" data-date-container='#datepicker2' data-provide="datepicker" data-date-autoclose="true">
-
-                                        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
-                                    </div>
-                                    <!-- input-group -->
-                                </div>
-
-                                <!-- Mpesa -->
-                                <div class="col-12 mpesa-mode  driver-pay-method">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="">Mpesa Ref No.</label>
-                                                <input type="text" class="form-control" placeholder="Enter Mpesa Ref No." name="" id="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- cash -->
-                                <div class="col-12 cash-mode d-none driver-pay-method">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="">Received Amount</label>
-                                                <input type="text" class="form-control" placeholder="Enter Cash amount received " name="" id="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- bank payment -->
-                                <div class="col-12 bank-mode d-none driver-pay-method">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="">Bank</label>
-                                                <input type="text" class="form-control" placeholder="Enter the bank's Name" name="" id="">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="">Transaction Ref No.</label>
-                                                <input type="text" class="form-control" placeholder="Enter Bank's transaction's Ref No" name="" id="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-success">Receipt Bill</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
             <!-- end modal -->
-            <!-- end modal -->
+
             <!-- filter right of canvus -->
             <div class="offcanvas offcanvas-end" tabindex="-1" id="dt__filter" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
-                    <h5 id="offcanvasRightLabel">Filter Member Register</h5>
+                    <h5 id="offcanvasRightLabel">Filter Transactions</h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <div class="col-12 mb-4">
                         <div class="alert alert-info alert-border" role="alert">
-                            Use this section to filter the table
+                            Use this section to filter the table to the way of your liking. Remember to submit your selection so as to submit the selections
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="mb-4">
-                            <label>Last collection date Range</label>
+                            <label>Select a date range</label>
 
                             <div class="input-daterange input-group" id="datepicker6" data-date-format="dd M, yyyy" data-date-autoclose="true" data-provide="datepicker" data-date-container='#datepicker6'>
                                 <input type="text" class="form-control date-drop-input" name="start" placeholder="Start Date" readonly />
@@ -1299,7 +1062,7 @@
 
                     <div class="col-12">
                         <div class="mb-4">
-                            <label>Milk collections amount range</label>
+                            <label>Amount range</label>
 
                             <div class="input-daterange input-group">
                                 <input type=" text " class="form-control " name="" placeholder="Min Amount" />
@@ -1310,25 +1073,13 @@
 
                     <div class="col-12">
                         <div class="mb-4">
-                            <label>Land Size</label>
-
-                            <div class="input-daterange input-group">
-                                <input type=" text " class="form-control " name="" placeholder="Min Size" />
-                                <input type="text " class="form-control " name="" placeholder="Max size" />
-                            </div>
-                            <span class="text-muted"><small>Specify a range for the field size</small></span>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="mb-4">
-                            <label>Route</label>
+                            <label>Toll takers</label>
                             <div class="row">
                                 <div class="col-md-12 col-lg-6">
                                     <div class="form-check form-check-primary mb-3">
                                         <input class="form-check-input" type="checkbox" id="allTollTakers" checked>
                                         <label class="form-check-label text-capitalize" for="allTollTakers">
-                                            All Routes
+                                            All toll takers
                                         </label>
                                     </div>
                                 </div>
@@ -1337,7 +1088,7 @@
                                     <div class="form-check form-check-primary mb-3">
                                         <input class="form-check-input" type="checkbox" id="tollTaker1">
                                         <label class="form-check-label text-capitalize" for="tollTaker1">
-                                            Nkubu
+                                            Kelvin Njuguna
                                         </label>
                                     </div>
                                 </div>
@@ -1346,7 +1097,7 @@
                                     <div class="form-check form-check-primary mb-3">
                                         <input class="form-check-input" type="checkbox" id="tollTaker3">
                                         <label class="form-check-label text-capitalize" for="tollTaker3">
-                                            Mutithi
+                                            Samoli Chillo
                                         </label>
                                     </div>
                                 </div>
@@ -1355,7 +1106,7 @@
                                     <div class="form-check form-check-primary mb-3">
                                         <input class="form-check-input" type="checkbox" id="tollTaker4">
                                         <label class="form-check-label text-capitalize" for="tollTaker4">
-                                            Mukinduri
+                                            Alex Wanjala
                                         </label>
                                     </div>
                                 </div>
@@ -1364,7 +1115,7 @@
                                     <div class="form-check form-check-primary mb-3">
                                         <input class="form-check-input" type="checkbox" id="tollTaker5">
                                         <label class="form-check-label text-capitalize" for="tollTaker5">
-                                            Kathangeri
+                                            Edwin Kiploman
                                         </label>
                                     </div>
                                 </div>
@@ -1383,375 +1134,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- offcanvasess begining. they will be containing the different side bars with the statuses -->
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <div class="d-flex">
-
-                        <div class="flex-shrink-0 align-self-center me-3 d-none">
-                            <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
-                        </div>
-
-                        <div class="flex-grow-1 overflow-hidden pe-5">
-                            <div class=" mb-1 text-capitalize d-flex">
-                                <h5 class="text-truncate font-size-14 mb-0">
-                                    Kelvin Kinoti
-                                </h5>
-                                
-                            </div>
-                            <p class="text-truncate mb-0 text-uppercase">Name Of The Department</p>
-                        </div>
-
-
-                    </div>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="alert alert-success" role="alert">
-                        Active
-                    </div>
-                    <div class="card shadow-none border">
-                        <div class="card-body p-3">
-                            <div class="">
-
-                                <div class="d-flex">
-                                    <div class="overflow-hidden me-auto">
-                                        <h5 class="font-size-14 text-truncate mb-1"><a href="javascript: void(0);" class="text-body">Today's Highlights</a></h5>
-                                       
-                                    </div>
-                                   
-                                </div>
-
-                                <div class="card-body bg-light d-flex mb-4 mt-4">
-                                    <p class=" mb-0 ">
-                                        <i class="mdi mdi-account-clock text-info align-middle me-3 font-size-24 ml-5 mr-5 "></i>
-                                    </p>
-                                    <div>
-                                        <p class="text-muted mb-0 ">Check In Time</p>
-                                        <p class="mb-0 ">
-                                            <strong class="fw-semibold">
-                                                <span class="">7:09 AM <span class="badge bg-success text-uppercase">Early Check In</span></span>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="card-body bg-light d-flex mb-4 mt-4">
-                                    <p class=" mb-0 ">
-                                        <i class="mdi mdi-crosshairs-gps text-dark align-middle me-3 font-size-24 ml-5 mr-5 "></i>
-                                    </p>
-                                    <div>
-                                        <p class="text-muted mb-0 ">Current Status</p>
-                                        <p class="mb-0 ">
-                                            <strong class="fw-semibold">
-                                                <span class="">On-Site</span>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="card-body bg-light d-flex mb-4 mt-4">
-                                    <p class=" mb-0 ">
-                                        <i class="mdi mdi-map-marker text-info align-middle me-3 font-size-24 ml-5 mr-5 "></i>
-                                    </p>
-                                    <div>
-                                        <p class="text-muted mb-0 ">Last Known Location</p>
-                                        <p class="mb-0 ">
-                                            <strong class="fw-semibold">
-                                                <span class="">Bujumbura Burundi</span>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="card-body bg-light d-flex mb-4 mt-4">
-                                    <p class=" mb-0 ">
-                                        <i class="mdi mdi-progress-download text-warning align-middle me-3 font-size-24 ml-5 mr-5 "></i>
-                                    </p>
-                                    <div>
-                                        <p class="text-muted mb-0 ">Check Out Time</p>
-                                        <p class="mb-0 ">
-                                            <strong class="fw-semibold">
-                                                <span class="">Pending <span class="badge bg-dark">-</span></span>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
-
-                               
-                            </div>
-                        </div>
-
-                        <div class="card-body p-3">
-
-                            <div>
-                                <div id="user-pie"></div>
-                            </div>
-                            <div class="d-none">
-
-                                <div class="d-flex">
-                                    <div class="overflow-hidden me-auto">
-                                        <h5 class="font-size-14 text-truncate mb-1"><a href="javascript: void(0);" class="text-body">Journey Details</a></h5>
-                                        <p class="text-muted text-truncate mb-0">23 KM</p>
-                                    </div>
-                                    <div class="align-self-end ms-2">
-                                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 20 Min</p>
-                                    </div>
-                                </div>
-
-                                <div class="card-body bg-light d-flex mb-4 mt-4">
-                                    <div class="border-bottom">
-                                        <div class="d-flex">
-                                            <div class="flex-shrink-0 align-self-center me-3">
-                                                <img src="assets/images/users/avatar-1.jpg" class="avatar-xs rounded-circle" alt="">
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h5 class="font-size-15 mb-1">Henry Wells (Pass)</h5>
-                                                <div class="rating-star font-size-11">
-                                                    <input type="hidden" class="rating font-size-11" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body bg-light d-flex mb-4 mt-4">
-                                    <p class=" mb-0 ">
-                                        <i class="mdi mdi-map-marker text-warning align-middle me-3 font-size-24 ml-5 mr-5 "></i>
-                                    </p>
-                                    <div>
-                                        <p class="text-muted mb-0 ">Current Location</p>
-                                        <p class="mb-0 ">
-                                            <strong class="fw-semibold">
-                                                <span class="the-clicked-address ">Unknown Road</span>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
-                                <ul class="verti-timeline list-unstyled ">
-                                    <li class="event-list ">
-                                        <div class="event-timeline-dot ">
-                                            <i class="mdi mdi-bell-ring font-size-18 text-warning "></i>
-                                        </div>
-                                        <div class="d-flex ">
-
-                                            <div class="flex-grow-1 ">
-                                                <span class="text-muted ">
-                                             Received Order Request at (5:26 AM)
-                                            </span>
-                                                <div>
-                                                    Standard media Mombasa road
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="event-list">
-                                        <div class="event-timeline-dot ">
-                                            <i class="mdi mdi-square font-size-18 text-black "></i>
-                                        </div>
-                                        <div class="d-flex ">
-
-                                            <div class="flex-grow-1 ">
-                                                <span class="text-muted ">
-                                             Base Location (5:26 AM)
-                                            </span>
-                                                <div>
-                                                    90 Degrees by TSAVO, Nairobi, Kenya
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="event-list ">
-                                        <div class="event-timeline-dot ">
-                                            <i class="mdi mdi-circle font-size-18 text-primary "></i>
-                                        </div>
-                                        <div class="d-flex ">
-
-                                            <div class="flex-grow-1 ">
-                                                <span class="text-muted ">
-                                             Drop Off Point
-                                            </span>
-                                                <div>
-                                                    Tulip House, Mombasa Road, Nairobi, Kenya
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="card-body bg-info bg-light d-flex mb-4 mt-4">
-                                    <p class=" mb-0 ">
-                                        <i class="mdi mdi-water text-info align-middle me-3 font-size-24 ml-5 mr-5 "></i>
-                                    </p>
-                                    <div>
-                                        <p class="text-muted mb-0 ">Water Quantity</p>
-                                        <p class="mb-0 ">
-                                            <strong class="fw-semibold">
-                                                <span class="">5,000 Li</span>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card-body bg-light d-flex mb-4 mt-4">
-                                    <p class=" mb-0 ">
-                                        <i class="mdi mdi-cash-multiple text-success align-middle me-3 font-size-24 ml-5 mr-5 "></i>
-                                    </p>
-                                    <div>
-                                        <p class="text-muted mb-0 ">Total Charges</p>
-                                        <p class="mb-0 ">
-                                            <strong class="fw-semibold">
-                                                <span class="">KES 1,200</span>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- providing details for the selected point -->
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="newPoint" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <div class="d-flex">
-
-                        <div class="flex-shrink-0 align-self-center me-3 d-none">
-                            <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
-                        </div>
-
-                        <div class="flex-grow-1 overflow-hidden pe-5">
-                            <div class=" mb-1 text-capitalize d-flex">
-                                <h5 class="text-truncate font-size-14 mb-0">
-                                    Add Check Point
-                                </h5>
-                                
-                            </div>
-                            <p class="text-truncate mb-0 text-uppercase">Check Point For Assignement for <strong>Kelvin Njuguna</strong></p>
-                        </div>
-
-
-                    </div>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                   
-                    <div class="card shadow-none border">
-                        <div class="card-body p-3">
-                            <div class="">
-
-                                <div class="d-flex">
-                                    <div class="overflow-hidden me-auto">
-                                        <h5 class="font-size-14 text-truncate mb-1"><a href="javascript: void(0);" class="text-body">Selected Location Details</a></h5>
-                                       
-                                    </div>
-                                   
-                                </div>
-
-                               
-
-                                <div class="card-body bg-light d-flex mb-4 mt-4">
-                                    <p class=" mb-0 ">
-                                        <i class="mdi mdi-map-check text-info align-middle me-3 font-size-24 ml-5 mr-5 "></i>
-                                    </p>
-                                    <div>
-                                        <p class="text-muted mb-0 ">Location Name</p>
-                                        <p class="mb-0 ">
-                                            <strong class="fw-semibold">
-                                                <span class="location-name">-</span>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="card-body bg-light d-flex mb-4 mt-4">
-                                    <p class=" mb-0 ">
-                                        <i class="mdi mdi-map-marker text-danger align-middle me-3 font-size-24 ml-5 mr-5 "></i>
-                                    </p>
-                                    <div>
-                                        <p class="text-muted mb-0 ">Location Address</p>
-                                        <p class="mb-0 ">
-                                            <strong class="fw-semibold">
-                                                <span class="location-address">-</span>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="w-100">
-                                    <label for="">Location Type</label>
-                                    <select class="form-select point-type">
-                                        <option>Select</option>
-                                        <option value="Start date">Start Point</option>
-                                        <option value="Stop Over">Stop Over</option>
-                                        <option value="Final Destination">Final Destination</option>
-                                    </select>
-                                </div>
-
-                                <div class="w-100 mt-4">
-                                    <label for="">Tasks To Be done At this Location</label>
-                                    <div class="table-responsive table-responsive-md mb-0">
-                                        <table class="table table-editable-2 align-middle table-edits table-sm">
-                                            <thead class="table-light">
-                                                <tr class="text-uppercase table-dark">
-                                                    <th class="vertical-align-middle">#</th>
-                                                    <th class="vertical-align-middle">Task Name</th>
-                                                    
-                                                    <th class="text-right"></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr data-id="1">
-                                                    <td style="width: 80px">1.</td>
-                                                   
-                                                   
-                                                    <td class="" title="Select number of months after which the tenancy agreement should be renewed">
-                                                        <input type="number" class="form-control text-right" placeholder="Enter Task" spellcheck="false" data-ms-editor="true">
-                                                    </td>
-
-
-                                                    <td></td>
-
-                                                </tr>
-                                                <tr class="cloneCharges d-none">
-                                                    <td style="width: 80px " class="categoryIndex ">#</td>
-
-                                                    <td class="" title="Select number of months after which the tenancy agreement should be renewed">
-                                                        <input type="number" class="form-control text-right" placeholder="Enter Task" spellcheck="false" data-ms-editor="true">
-                                                    </td>
-
-
-                                                    <td class="text-right d-flex align-items-center justify-content-end">
-                                                        <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
-                                                    </td>
-                                                </tr>
-
-
-                                            </tbody>
-                                            <tfoot>
-                                                <tr>
-                                                    <td colspan="7" class="bg-light add-field-2 cursor-pointer">
-                                                        <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Add A Task</span></span>
-                                                    </td>
-                                                </tr>
-                                            </tfoot>
-                                        </table>
-                                    </div>
-                                </div>
-
-                              
-                               
-                            </div>
-                        </div>
-
-                        <div class="card-footer">
-                            <button class="btn btn-success w-100 text-uppercase add-checkpoint">Add Check Point</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            <!-- of canvus -->
 
 
 
@@ -1761,11 +1144,11 @@
                         <div class="col-sm-6 ">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> © Early Bird
+                            </script> © PaySol POS Admin Portal
                         </div>
                         <div class="col-sm-6 ">
                             <div class="text-sm-end d-sm-block ">
-                                LeadCab
+                                Connecting you to your World
                             </div>
                         </div>
                     </div>
@@ -1786,6 +1169,7 @@
     <script src="assets/libs/jquery/jquery.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js "></script>
     <script src="assets/libs/metismenu/metisMenu.min.js "></script>
     <script src="assets/libs/simplebar/simplebar.min.js "></script>
@@ -1804,108 +1188,38 @@
     <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js "></script>
     <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js "></script>
     <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js "></script>
+    <!-- Bootstrap select -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js "></script>
 
-    <!-- advanced forms plugins -->
+    <script src="assets/libs/select2/js/select2.min.js"></script>
+    <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/libs/spectrum-colorpicker2/spectrum.min.js"></script>
+    <script src="assets/libs/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+    <script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+    <script src="assets/libs/%40chenfengyuan/datepicker/datepicker.min.js"></script>
 
-    <script src="assets/libs/select2/js/select2.min.js "></script>
-    <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js "></script>
-    <script src="assets/libs/spectrum-colorpicker2/spectrum.min.js "></script>
-    <script src="assets/libs/bootstrap-timepicker/js/bootstrap-timepicker.min.js "></script>
-    <script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js "></script>
-    <script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js "></script>
-    <script src="assets/libs/%40chenfengyuan/datepicker/datepicker.min.js "></script>
-    <!-- form mask -->
-    <script src="assets/libs/inputmask/min/jquery.inputmask.bundle.min.js "></script>
+    <!-- date range picker -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <!-- end of dtae range picker -->
 
     <!-- form advanced init -->
-    <script src="assets/js/pages/form-advanced.init.js "></script>
-    <!-- form masking -->
-    <script src="assets/js/pages/form-mask.init.js "></script>
-    <!-- numerals number formater -->
-    <script src="assets/libs/numeral/numeral.js "></script>
+    <script src="assets/js/pages/form-advanced.init.js"></script>
+
 
     <!-- Responsive examples -->
     <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js "></script>
     <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js "></script>
-
-    <!-- Bootstrap select -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js "></script>
-    <script src="assets/libs/bootstrap-rating/bootstrap-rating.min.js "></script>
-
-    <script src="assets/js/pages/rating-init.js "></script>
+    <!-- numerals number formater -->
+    <script src="assets/libs/numeral/numeral.js "></script>
     <!-- Datatable init js -->
     <script src="assets/js/pages/datatables.init.js "></script>
-
-     <!-- Table Editable plugin -->
-     <script src="assets/libs/table-edits/build/table-edits.min.js"></script>
-     <script src="assets/js/pages/table-editable.int.js"></script>
-
-    <!-- Bootstrap rating js -->
-    <script src="assets/libs/bootstrap-rating/bootstrap-rating.min.js "></script>
-
-    <script src="assets/js/pages/rating-init.js "></script>
-
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-
 
     <!-- App js -->
     <script src="assets/js/app.js "></script>
     <script src="assets/js/custom.js "></script>
-    <!-- script for the receipting -->
-    <script src="assets/js/payment-method.js "></script>
-    <!-- the map -->
-    <script src="assets/js/map-route.js "></script>
-
-    <!-- axios to be used for geocoding -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js " integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin=" anonymous "></script>
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8&callback=initMap ">
-    </script>
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8&callback=initMap&libraries=places&v=weekly " defer>
-    </script>
-
-    <script>
-        $('.add-checkpoint').on('click', function(){
-          
-
-            var placeName=$('.location-name').text()
-            var locationAddress=$('.location-name').text()
-            var pointType=$('.point-type').val()
-            var tasks=$('.categoryIndex').last().text()
-            $('.intial-row').addClass('d-none')
-           
-            var newContent=
-            `<tr>
-                    <th>`+pointType+`</th>
-                    <td>
-                        <small>
-                            <p class="mb-0 fw-bold text-black">`+placeName+`</p>
-                            <span>`+locationAddress+`</span>
-                        </small>
-                    </td>
-                    <td>`+tasks+`Tasks</td>
-                    <td class="text-right">
-                        <button title="View Item" type="button" class="btn btn-link waves-effect" fdprocessedid="ahck98"><i class="mdi mdi-eye-outline font-size-16 align-middle me-2"></i></button>
-
-                        <button title="Remove Item" type="button" class="btn btn-link waves-effect text-danger" fdprocessedid="g0nk0j"><i class="mdi mdi-close font-size-16 align-middle me-2"></i></button>
-
-                    </td>
-                </tr>
-            `
-
-            $(newContent).appendTo('.selected-addresses').removeClass('d-none');
-
-            // alert($('.selected-addresses tr').length)
-        })
-    </script>
-
-  
 </body>
-
-
 <!-- index.html   13:55:49 GMT -->
 
-</html> 
+</html>
